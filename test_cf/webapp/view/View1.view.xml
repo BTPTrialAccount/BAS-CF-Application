@@ -1,0 +1,28 @@
+<mvc:View
+    controllerName="testcf.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <content>
+            <VBox>
+							<Label text="Display Name: {userModel>/decodedJWTToken/given_name} {userModel>/decodedJWTToken/family_name} ({userModel>/decodedJWTToken/user_id})"></Label>
+							<Label text="Email: {userModel>/decodedJWTToken/email}"></Label>
+							<Label text="First Name: {userModel>/decodedJWTToken/given_name}"></Label>
+							<Label text="Last Name: {userModel>/decodedJWTToken/family_name}"></Label>
+						</VBox>                    
+                    <Text id="234sfasd" text="Test Arun CF deploy in CF" ></Text>
+                              <List id="_IDGenList1" items="{/Products}">
+            <StandardListItem id="_IDGenStandardListItem1" title="{ProductName}">
+            </StandardListItem>
+          </List>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
